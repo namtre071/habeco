@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #000;
+}
+.head{
+    width: 100%;
+}
+#header{
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    transition: all 0.7s;
+    z-index: 1000;
+}
+ul{
+    list-style: none;
+} ul li a{
+    text-decoration: none;
+    
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+#inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main-menu {
+    display: flex;
+}
+#main-menu li a{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #000;
+    display: block;
+    font-weight: bold;
+}
+#banner{
+    background-image: url(../img/banner-home-png1.PNG);
+        height: 50vh;
+    width: 100%;
+}
+/* ----------sticky-------- */
+#header.sticky{
+    background-color: #fff;
+    /* opacity: 1; */
+    color: #000;
+    padding: 15px 0;
+    z-index: 1000;
+}
+#header.sticky #main-menu li a{
+    color: #000;
+}
+
+.photo-area{
+    position: relative;
+    background-color: #fff; 
+    color: #000;
+}
+
+.banner-vid{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    overflow: hidden;
+}
+.wrapper{
+    height: 800px;
+}
+.texton{
+    position: absolute;
+    text-align: center;
+    z-index: 100;
+    
+    width: 100%;
+}
+.vid{
+    width: 100%;
+    position: absolute;
+}
+.slogan{
+    margin-top: 60px;
+}
+h1{
+    font-size: 40px;
+}
+h1 ,h2{
+    color: rgb(231, 195, 195);
+    text-transform: uppercase;
+   
+}
+.join-talent-onclip{
+    padding: 50px;
+}
+.join-talent-onclip a{
+    background: rgb(20, 141, 57);
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 120%;
+    transition: all .7s;
+}
+.join-talent-onclip a:hover{
+    background: #fff;
+    color: rgb(20, 141, 57);
+}
+.container-search{
+    text-align: center;
+}
+.search-jobs-main{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    margin-top: 500px;
+}
+.search-jobs-main input{
+    padding: 15px;
+    margin-left: 30px;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    outline: none;
+    background-color: #000;
+}
+.search-jobs-main select{
+    padding: 15px;
+    margin-left: 30px;
+    width: 300px;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    color: #fff;
+    outline: none;
+    background-color: #000;
+}
+.search-jobs-main select option{
+    padding: 10px ;
+    margin-top: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    outline: none;
+    background-color: #000;
+}
+.search-jobs-main button{
+    padding: 15px;
+    margin-left: 30px;
+    width: 150px;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    outline: none;
+    color: #fff;
+    background-color: #000;
+}
+/* ======jobs=========== */
+.jobs{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-item{
+    padding: 40px;
+    text-align: center;
+}
+.grid-item .job-name{
+    padding: 20px;
+}
+.job-name a{
+    text-decoration: none;
+
+    font-size: 24px;
+}
+.jobs button{
+    padding: 10px 20px;
+    background-color: rgb(20, 141, 57);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.jobs button a{
+    color: #fff;
+    text-decoration: none;
+}
+/* ===slide----- */
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 100%; 
+    height: 370px;
+    padding: 10px; 
+    overflow: hidden;
+  }
+  #slideshow div img{
+      width: 100%;
+  }
+  #slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+  }
+  .overview{
+      width: 70%;
+      margin: 0 auto
+  }
+  .text-intro p{
+      display: grid;
+      grid-template-columns: auto auto;
+  }
+  .text-intro span{
+      padding: 10px;
+  }
