@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 .news-grid__col:first-child {
     grid-row: span 2; 
 }
-.news-grid__col:nth-child(4) .news-2__body {
+.news-grid__col:nth-child(3) .news-2__body {
     order: -1; 
 }
 .news-grid__col:nth-child(4) .news-2__body::before {
